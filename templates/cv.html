@@ -1,1 +1,613 @@
-<h1>CV</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ignacio Borello</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+        body{
+            background-color: #f3e5f5;
+        }
+        main{
+
+        }
+        header{
+
+        }
+        section{
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        nav{
+            height: 18rem !important;
+            background-image: url("https://besthqwallpapers.com/Uploads/5-12-2017/32024/thumb2-material-design-4k-creative-lines-purple-background.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .nav-title{
+            margin-left: 2rem;
+            padding-bottom: .7rem !important;
+        }
+        .nav-subtitle{
+            margin-left: 2rem;
+            padding-bottom: 2.3rem !important;
+        }
+        .nav-content{
+            position: relative;
+            bottom:-5rem;
+        }
+        .profilepic{
+            position: absolute;
+            top: -7rem;
+            right: 3rem;
+            width: 14rem;
+            height: 14rem;
+        }
+        .personal-item{
+            padding: .5rem 1rem .6rem 1rem
+        }
+        .about-text{
+            font-size: 1.3rem;
+            text-indent: 2rem;
+            padding: 0rem;
+            margin: 0rem;
+        }
+        .section-title{
+            margin-left:6rem;
+        }
+        .work-container{
+            padding:0rem 4rem 0rem 4rem;
+        }
+        .skill-chart{
+            height: 13rem;
+        }
+        .lang{
+            margin: 0.25rem;
+            margin-left:5rem;
+        }
+        .lang-text{
+            position: relative;
+            top: 0.25rem;
+            margin-left: 5rem;
+            font-weight: bold
+        }
+
+        .stepper .step { 
+            position: relative; 
+            min-height: 32px; 
+            padding: 24px;
+        }
+        /*.stepper .step:hover {
+            background: #F6F6F6;
+        }*/
+        .stepper .step > div:first-child { 
+            position: static; height: 0; 
+        }
+        .stepper .step > div:last-child { 
+            margin-left: 32px; 
+            padding-left: 16px; 
+            min-height: 24px;
+        }
+        .stepper .circle { 
+            background: #ab47bc; 
+            width: 32px; 
+            height: 32px; 
+            line-height: 32px; 
+            border-radius: 16px; 
+            position: relative; 
+            color: white; 
+            text-align: center; 
+        }
+        .stepper .line { 
+            position: absolute;
+            border-left: 1px solid gainsboro;
+            left: 40px;
+            bottom: -12px;
+            top: 68px;
+            z-index: 1;
+        }
+        .stepper .step:last-child .line { 
+            display: none !important; 
+        }
+        .stepper .title { 
+            line-height: 32px; 
+            font-weight: 500; 
+        }
+        .stepper .body {    
+            padding-bottom: 28px;
+            padding-top: 8px;
+        }
+        .stepper .description {
+            line-height: 0.1;
+            font-size: 1em;
+            padding-bottom: 24px;
+            color: #989898;
+        }
+        /** Horizontal **/
+        .stepper.horizontal {
+            line-height: 72px;
+            position: relative;
+        }
+        .stepper.horizontal .step {
+            display: inline-block;
+        }
+        .stepper.horizontal .step .line, .stepper.horizontal .step .circle, .stepper.horizontal .step .title {
+            display: inline-block;
+        }
+        .stepper.horizontal .step .line {
+            border-left: 0px;
+            position: inherit;
+            border-top: 1px solid gainsboro;
+            width: 100px;
+            margin-bottom: 5px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .stepper.horizontal .step .title {
+            margin-left: 8px;
+        }
+        .stepper.horizontal .step .body {
+            line-height: initial;
+        }
+        .stepper.horizontal .step > div:last-child {
+            position: absolute;
+            width: 90vw;
+            top: 93px;
+            margin-left: 0px;
+            padding-left: 0px;
+            margin: auto;
+        }
+        .stepper .step.inactive .title{
+            color: #C9C9C9;
+            font-weight: 400;
+        }
+        .stepper .step.inactive .body{
+            display: none;
+        }
+        .stepper .step.inactive .circle{
+            background-color: #9e9e9e;
+        }
+
+
+
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <nav class="nav-extended z-depth-0">
+                <div class="nav-wrapper"></div>
+                <div class="nav-content">
+                    <span class="nav-title">Ignacio Borello</span><br>
+                    <span class="nav-subtitle">Programming Technician</span>
+                    <img class="responsive-img circle profilepic" src="data:image/jpeg;base64,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">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="row z-depth-1 white">
+                <div class="col s6  ">
+                    <h4 class="center-align purple-text">Personal</h4>
+                    <ul class="container">
+                        <li class="personal-item">
+                            <b class="purple-text">Name:</b> Ignacio Borello
+                            <div class="divider" style="margin-top:.5rem"></div>
+                        </li>
+                        <li class="personal-item">
+                            <b class="purple-text">Birthday:</b> 27 May 1997 (20)
+                            <div class="divider" style="margin-top:.5rem"></div>
+                        </li>
+                        <li class="personal-item">
+                            <b class="purple-text">Nationality:</b> Argentinian
+                            <div class="divider" style="margin-top:.5rem"></div>
+                        </li>
+                        <li class="personal-item">
+                            <b class="purple-text">Telephone:</b> +54 351 505-8344
+                            <div class="divider" style="margin-top:.5rem"></div>
+                        </li>
+                        <li class="personal-item">
+                            <b class="purple-text">Email:</b> ignacio.borello@gmail.com
+                            <div class="divider" style="margin-top:.5rem"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s6" style="padding: 0rem 3rem 0rem 3rem;">
+                    <h4 class="center-align purple-text">About Me</h4>
+                    <p class="about-text">Programming Technician and Computer Engineering Student working right now for XRP developing web applications based on angularJs.</p>
+                    <p class="about-text">I'm very passionate about tecnology and I have good knowledge about PC hardaware and it's maintainance as well as many tools for software developement either for backend or frontend. I'm always looking forward to get my field of work bigger and learn new skills.</p>
+                </div>
+            </section>
+
+            <section class="row" style="padding-bottom:0px;padding-top:0px;">
+                <div class="row">
+                    <h3 class="purple-text section-title col s11 offset-s1">Technologies</h3>
+                </div>
+                <div class="row">
+                        <div class="col s6 ">
+                            <div class="row">
+                                <span class="lang-text">HTML5/CSS3</span>
+                                <div class="progress container lang grey lighten-1">
+                                    <div class="determinate purple" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="lang-text">Django</span>
+                                <div class="progress container lang grey lighten-1">
+                                    <div class="determinate purple" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <span class="lang-text">AngularJS</span>
+                                <div class="progress container lang grey lighten-1">
+                                    <div class="determinate purple" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="lang-text">Android</span>
+                                <div class="progress container lang grey lighten-1">
+                                    <div class="determinate purple" style="width: 57%"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="lang-text">RESTful</span>
+                                <div class="progress container lang grey lighten-1">
+                                    <div class="determinate purple" style="width: 64%"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col s6">
+                            <div class="row">
+                                    <span class="lang-text">Java</span>
+                                    <div class="progress container lang grey lighten-1">
+                                        <div class="determinate purple" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <span class="lang-text">Python</span>
+                                    <div class="progress container lang grey lighten-1">
+                                        <div class="determinate purple" style="width: 87%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <span class="lang-text">Javascript</span>
+                                    <div class="progress container lang grey lighten-1">
+                                        <div class="determinate purple" style="width: 89%"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <span class="lang-text">C++</span>
+                                    <div class="progress container lang grey lighten-1">
+                                        <div class="determinate purple" style="width: 62%"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <span class="lang-text">MySQL</span>
+                                    <div class="progress container lang grey lighten-1">
+                                        <div class="determinate purple" style="width: 58%"></div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </section>
+
+            <section class="row z-depth-1 white">
+                <div class="row">
+                    <h3 class="purple-text section-title col s11 offset-s1">Work</h3>
+                </div>
+                <div class="row work-container">
+                    <div class="stepper">
+                        <div class="step">
+                            <div>
+                                <div class="circle"><i class="material-icons purple-text text-lighten-5" style="padding-top: .25rem;">album</i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div>
+                                <div class="title">Internship</div>
+                                <div class="description">Vates</div>
+                                <div class="body">An internship in Vates (<a href="http://www.vates.com">vates.com</a>) working as a back-end developer in a Django project. This project consisted in a management system for a medical center where the MVC structure was used alognsied Django and som AngularJs on the front-end.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div>
+                                <div class="circle"><i class="material-icons purple-text text-lighten-5" style="padding-top: .25rem;">album</i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div>
+                                <div class="title">Software Developer</div>
+                                <div class="description">XRP (current)</div>                                
+                                <div class="body">Working for about 2 years in XRP (<a href="https://www.xrp.net">xrp.net</a>) as a front-end developer focusing on AngularJs as well as the Echarts library and the Google Map API in various projects, as well as the design of the user interface with a strong influence of Materia Design.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div>
+                                <div class="circle"><i class="material-icons purple-text text-lighten-5" style="padding-top: .25rem;">album</i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div>
+                                <div class="title">Next Destination!</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <section class="row" style="margin-bottom:0px;padding-bottom:0px;padding-top:0px;">
+                <div class="row" style="margin-bottom:-10px;">
+                    <h3 class="purple-text section-title col s11 offset-s1">Skills</h3>
+                </div>
+                <div class="row" style="margin-top:0;">
+                    <div id="chart-0" class="skill-chart col s2"></div>
+                    <div id="chart-1" class="skill-chart col s2"></div>
+                    <div id="chart-2" class="skill-chart col s2"></div>
+                    <div id="chart-3" class="skill-chart col s2"></div>
+                    <div id="chart-4" class="skill-chart col s2"></div>
+                    <div id="chart-5" class="skill-chart col s2"></div>
+                </div>
+
+            </section>
+
+            <section class="row z-depth-1 white">
+                <div class="row">
+                    <h3 class="purple-text section-title col s11 offset-s1">Education</h3>
+                </div>
+                <div class="row work-container">
+                    <div class="stepper">
+                        <div class="step">
+                            <div>
+                                <div class="circle"><i class="material-icons purple-text text-lighten-5" style="padding-top: .25rem;">album</i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div>
+                                <div class="title">High school</div>
+                                <div class="description">ITS Villada</div>
+                                <div class="body">Graduated as a Programming Technician with knowledge in machinning, woodworking, electric installations, electronics and 4 years of trinning in software developement as well as agile methodology 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div>
+                                <div class="circle"><i class="material-icons purple-text text-lighten-5" style="padding-top: .25rem;">album</i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div>
+                                <div class="title">English Academy</div>
+                                <div class="description">WorldLink</div>                                
+                                <div class="body">Graduated with honors with a C1 level in English and scoring 986 in the TOEIC exam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div>
+                                <div class="circle"><i class="material-icons purple-text text-lighten-5" style="padding-top: .25rem;">album</i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div>
+                                <div class="title">Computer Engineering</div>
+                                <div class="description">National University of Cordoba (Current)</div>                                
+                                <div class="body">Currently studying Computer Engineering
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div>
+                                <div class="circle"><i class="material-icons purple-text text-lighten-5" style="padding-top: .25rem;">album</i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div>
+                                <div class="title">Maybe a PhD, who knows!</div>
+                                <div class="description"></div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </section>
+
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.0.4/echarts-en.common.min.js"></script>
+        <script>
+            option0 = {
+                title:{
+                    show:true,
+                    text:"Problem Solving",
+                    left:"center",
+                    top:"center",
+                    textStyle:{fontSize:"15",fontFamily:"sans-serif"}
+                },
+                series: [
+                    {
+                        color:["#9c27b0","#AAAAAA"],
+                        name:'serie',
+                        type:'pie',
+                        radius: ['60%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {normal: {show: false},emphasis: {show: false}
+                        },
+                        labelLine: {normal: {show: false}},
+                        data:[
+                            {value:90, name:'other'},
+                            {value:10, name:'skill'}
+                        ],
+                        hoverAnimation:false
+                    }]};
+            
+            option1 = {
+                title:{
+                    show:true,
+                    text:"Time Management",
+                    left:"center",
+                    top:"center",
+                    textStyle:{fontSize:"15",fontFamily:"sans-serif"}
+                },
+                series: [
+                    {
+                        color:["#9c27b0","#AAAAAA"],
+                        name:'serie',
+                        type:'pie',
+                        radius: ['60%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {normal: {show: false},emphasis: {show: false}
+                        },
+                        labelLine: {normal: {show: false}},
+                        data:[
+                            {value:65, name:'other'},
+                            {value:35, name:'skill'}
+                        ],
+                        hoverAnimation:false
+                    }]};
+            
+            option1 = {
+                title:{
+                    show:true,
+                    text:"Communication",
+                    left:"center",
+                    top:"center",
+                    textStyle:{fontSize:"15",fontFamily:"sans-serif"}
+                },
+                series: [
+                    {
+                        color:["#9c27b0","#AAAAAA"],
+                        name:'serie',
+                        type:'pie',
+                        radius: ['60%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {normal: {show: false},emphasis: {show: false}
+                        },
+                        labelLine: {normal: {show: false}},
+                        data:[
+                            {value:51, name:'other'},
+                            {value:49, name:'skill'}
+                        ],
+                        hoverAnimation:false
+                    }]};
+            
+            option2 = {
+                title:{
+                    show:true,
+                    text:"UX/UI Design",
+                    left:"center",
+                    top:"center",
+                    textStyle:{fontSize:"15",fontFamily:"sans-serif"}
+                },
+                series: [
+                    {
+                        color:["#9c27b0","#AAAAAA"],
+                        name:'serie',
+                        type:'pie',
+                        radius: ['60%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {normal: {show: false},emphasis: {show: false}
+                        },
+                        labelLine: {normal: {show: false}},
+                        data:[
+                            {value:57, name:'other'},
+                            {value:43, name:'skill'}
+                        ],
+                        hoverAnimation:false
+                    }]};
+            
+            option3 = {
+                title:{
+                    show:true,
+                    text:"Independent",
+                    left:"center",
+                    top:"center",
+                    textStyle:{fontSize:"15",fontFamily:"sans-serif"}
+                },
+                series: [
+                    {
+                        color:["#9c27b0","#AAAAAA"],
+                        name:'serie',
+                        type:'pie',
+                        radius: ['60%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {normal: {show: false},emphasis: {show: false}
+                        },
+                        labelLine: {normal: {show: false}},
+                        data:[
+                            {value:79, name:'other'},
+                            {value:21, name:'skill'}
+                        ],
+                        hoverAnimation:false
+                    }]};
+            
+            option4 = {
+                title:{
+                    show:true,
+                    text:"Versatility",
+                    left:"center",
+                    top:"center",
+                    textStyle:{fontSize:"15",fontFamily:"sans-serif"}
+                },
+                series: [
+                    {
+                        color:["#9c27b0","#AAAAAA"],
+                        name:'serie',
+                        type:'pie',
+                        radius: ['60%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {normal: {show: false},emphasis: {show: false}
+                        },
+                        labelLine: {normal: {show: false}},
+                        data:[
+                            {value:85, name:'other'},
+                            {value:15, name:'skill'}
+                        ],
+                        hoverAnimation:false
+                    }]};
+            
+            option5 = {
+                title:{
+                    show:true,
+                    text:"Creativity",
+                    left:"center",
+                    top:"center",
+                    textStyle:{fontSize:"15",fontFamily:"sans-serif"}
+                },
+                series: [
+                    {
+                        color:["#9c27b0","#AAAAAA"],
+                        name:'serie',
+                        type:'pie',
+                        radius: ['60%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {normal: {show: false},emphasis: {show: false}
+                        },
+                        labelLine: {normal: {show: false}},
+                        data:[
+                            {value:75, name:'other'},
+                            {value:25, name:'skill'}
+                        ],
+                        hoverAnimation:false
+                    }]};
+            
+            var myChart0 = echarts.init(document.getElementById('chart-0'));
+            var myChart1 = echarts.init(document.getElementById('chart-1'));
+            var myChart2 = echarts.init(document.getElementById('chart-2'));
+            var myChart3 = echarts.init(document.getElementById('chart-3'));
+            var myChart4 = echarts.init(document.getElementById('chart-4'));
+            var myChart5 = echarts.init(document.getElementById('chart-5'));
+
+            myChart0.setOption(option0);
+            myChart1.setOption(option1);
+            myChart2.setOption(option2);
+            myChart3.setOption(option3);
+            myChart4.setOption(option4);
+            myChart5.setOption(option5);
+
+        </script>
+    </body>
+</html>
