@@ -19,5 +19,5 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',TemplateView.as_view(template_name="pages/cv.html"))
+    path('cv/',TemplateView.as_view(template_name="cv.html"))
 ]
